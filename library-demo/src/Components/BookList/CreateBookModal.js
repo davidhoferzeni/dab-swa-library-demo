@@ -11,7 +11,7 @@ function CreateBookModal({ showModal, setShowModal, refetch }) {
 
     const createBookRequest = async () => {
         try {
-            const response = await fetch('/data-api/api/Book', {
+            const response = await fetch('/api/Book', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

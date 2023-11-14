@@ -12,7 +12,7 @@ const BookList = () => {
     const fetchData = async (disableLoadState) => {
         if(!disableLoadState) setIsLoading(true);
         try {
-            const response = await fetch('/data-api/api/Book');
+            const response = await fetch('/api/Book');
             if (!response.ok) {
                 throw new Error(response.statusText);
             }
